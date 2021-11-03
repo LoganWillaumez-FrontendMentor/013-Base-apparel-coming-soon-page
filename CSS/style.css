@@ -216,12 +216,26 @@ input::placeholder {
   line-height: 28px;
 }
 
+.error {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 72px;
+}
+@media only screen and (min-width: 1000px) {
+  .error {
+    right: 116px;
+  }
+}
+
 button {
   width: 64px;
   height: 100%;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   position: absolute;
   right: 0;
+  top: 0;
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
   border-radius: 28px;
   border: none;
