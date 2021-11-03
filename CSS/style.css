@@ -1,0 +1,239 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+}
+@media only screen and (min-width: 1540px) {
+  body {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media only screen and (min-height: 810px) {
+  body {
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 57% 1fr;
+    grid-template-rows: 108px 1fr;
+    place-items: center;
+    text-align: left;
+    max-width: 1540px;
+    max-height: 900px;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 1000px) and (min-width: 1540px) {
+  .container {
+    overflow: visible;
+    width: 1500px;
+  }
+}
+
+body {
+  font-size: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 10.8254px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 1000px) {
+  h1 {
+    max-width: 369px;
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17.3206px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .bigweight {
+    font-weight: 600;
+  }
+}
+
+.main-body {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.main-body {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #ce9797;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 1000px) {
+  .main-body {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 404px;
+    margin-bottom: 40px;
+  }
+}
+
+.pink-title {
+  color: #ce9797;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+@media only screen and (min-width: 1000px) {
+  header {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  order: -1;
+  width: 100px;
+  height: 21px;
+  object-fit: cover;
+  margin: 32px;
+}
+@media only screen and (min-width: 1000px) {
+  .logo {
+    position: absolute;
+    top: 75px;
+    left: 11%;
+    margin: 0;
+    width: 158px;
+    height: 33px;
+  }
+}
+
+.picture-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .picture-desktop {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1540px) {
+  .picture-desktop {
+    border-radius: 10px;
+  }
+}
+
+.picture-mobile {
+  display: inline;
+}
+@media only screen and (min-width: 375px) {
+  .picture-mobile {
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .picture-mobile {
+    display: none;
+  }
+}
+
+main {
+  padding: 0 32px 0 32px;
+  margin-bottom: 32px;
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    max-width: 445px;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    padding: 0;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+}
+
+form {
+  width: 311px;
+  height: 48px;
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  form {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    width: 445px;
+    height: 56px;
+  }
+}
+
+input {
+  width: 100%;
+  border: 0.5px solid #ce9797;
+  background: none;
+  height: inherit;
+  border-radius: 25px;
+  padding-left: 24px;
+  opacity: 0.5;
+}
+
+input::placeholder {
+  color: #ce9797;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+button {
+  width: 64px;
+  height: 100%;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  position: absolute;
+  right: 0;
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(135deg, rgba(248, 191, 191, 0.5), rgba(238, 140, 140, 0.5));
+}
+@media only screen and (min-width: 1000px) {
+  button {
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

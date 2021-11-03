@@ -4,24 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      f
+      href="./images/favicon-32x32.png"
+    />
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="images/hero-mobile.jpg" alt="" class="logo" />
-        <img src="images/logo.svg" alt="" class="picture" />
+        <img src="images/hero-mobile.jpg" alt="" class="picture-mobile" />
+        <img src="images/hero-desktop.jpg" alt="" class="picture-desktop" />
+        <img src="images/logo.svg" alt="" class="logo" />
       </header>
       <main>
-        <h1></h1>
-        <p class="main-body"></p>
+        <h1>
+          <span class="pink-title"> We're</span>
+          <span class="bigweight">coming soon</span>
+        </h1>
+        <p class="main-body">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#">
+          <label for="mdp"></label>
+          <input id="mdp" type="password" placeholder=" Email Address " />
+          <button id="arrow-button">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
       </main>
-      <form action="#">
-        <label for="mdp"></label>
-        <input id="mdp" type="password" />
-        <button id="arrow-button"></button>
-      </form>
       <script src="app.js"></script>
     </div>
   </body>
