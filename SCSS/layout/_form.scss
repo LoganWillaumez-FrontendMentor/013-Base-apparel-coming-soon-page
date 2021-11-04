@@ -1,0 +1,97 @@
+@use "../abstracts" as *;
+
+form {
+  width: 311px;
+  height: 48px;
+  position: relative;
+  &.bounce {
+    animation: bounceX 250ms linear 150ms 1 alternate;
+  }
+  &.active {
+    input {
+      border-color: #f96464;
+    }
+    .error {
+      visibility: visible;
+      right: 72px;
+      @media only screen and (min-width: 1000px) {
+        right: 116px;
+      }
+    }
+    .valid-email {
+      transform: scaleY(1);
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    width: 445px;
+    height: 56px;
+  }
+}
+input {
+  width: 100%;
+  border: 0.5px solid $desatured-red;
+  background: none;
+  height: inherit;
+  border-radius: 25px;
+  padding-left: 24px;
+  opacity: 0.5;
+  transition: all 250ms ease-in-out;
+}
+input::placeholder {
+  color: $desatured-red;
+  font-size: 16px;
+  line-height: 28px;
+}
+.valid-email {
+  color: #f96464;
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all 150ms ease-in-out;
+}
+.error {
+  visibility: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  transition: all 150ms ease-in-out;
+}
+@keyframes bounceX {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+  96% {
+    transform: translateX(-2px);
+    timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+}

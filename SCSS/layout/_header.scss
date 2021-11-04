@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  @media only screen and (min-width: 1000px) {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    margin-bottom: 0;
+  }
+}
+.logo {
+  order: -1;
+  width: 100px;
+  height: 21px;
+  object-fit: cover;
+  margin: 32px;
+  @media only screen and (min-width: 1000px) {
+    position: absolute;
+    top: 75px;
+    left: 11%;
+    margin: 0;
+    width: 158px;
+    height: 33px;
+  }
+}
+.picture-desktop {
+  display: none;
+  @media only screen and (min-width: 1000px) {
+    display: inline;
+  }
+  @media only screen and (min-width: 1540px) {
+    border-radius: 10px;
+  }
+}
+.picture-mobile {
+  display: inline;
+  @media only screen and (min-width: 375px) {
+    border-radius: 5px;
+  }
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
+}

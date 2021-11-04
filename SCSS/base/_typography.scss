@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+body {
+  font-size: 16px;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 10.8254px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  @media only screen and (min-width: 1000px) {
+    max-width: 369px;
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17.3206px;
+  }
+}
+.bigweight {
+  @media only screen and (min-width: 1000px) {
+    font-weight: 600;
+  }
+}
+.main-body {
+  font-size: 14px;
+  line-height: 22px;
+}
+.main-body {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: normal;
+  color: $desatured-red;
+  font-weight: 300;
+  margin-bottom: 32px;
+  @media only screen and (min-width: 1000px) {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 404px;
+    margin-bottom: 40px;
+  }
+}
+.pink-title {
+  color: $desatured-red;
+}
+.valid-email {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: normal;
+}

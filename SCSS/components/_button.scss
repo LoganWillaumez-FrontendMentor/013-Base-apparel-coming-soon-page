@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+button {
+  width: 64px;
+  height: 100%;
+  background: $grad-2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(135deg, hsl(0, 77%, 88%), hsl(0, 71%, 81%));
+  }
+  @media only screen and (min-width: 1000px) {
+    width: 100px;
+  }
+}
