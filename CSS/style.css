@@ -42,6 +42,9 @@ body {
     text-align: left;
     max-width: 1540px;
     max-height: 900px;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left;
     overflow: hidden;
   }
 }
@@ -103,6 +106,12 @@ h1 {
 
 .pink-title {
   color: #ce9797;
+}
+
+.valid-email {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: normal;
 }
 
 header {
@@ -191,6 +200,24 @@ form {
   height: 48px;
   position: relative;
 }
+form.bounce {
+  animation: bounceX 250ms linear 150ms 1 alternate;
+}
+form.active input {
+  border-color: #f96464;
+}
+form.active .error {
+  visibility: visible;
+  right: 72px;
+}
+@media only screen and (min-width: 1000px) {
+  form.active .error {
+    right: 116px;
+  }
+}
+form.active .valid-email {
+  transform: scaleY(1);
+}
 @media only screen and (min-width: 1000px) {
   form {
     grid-column: 1/1;
@@ -208,6 +235,7 @@ input {
   border-radius: 25px;
   padding-left: 24px;
   opacity: 0.5;
+  transition: all 250ms ease-in-out;
 }
 
 input::placeholder {
@@ -216,19 +244,59 @@ input::placeholder {
   line-height: 28px;
 }
 
+.valid-email {
+  color: #f96464;
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all 150ms ease-in-out;
+}
+
 .error {
-  display: none;
+  visibility: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  right: 72px;
-}
-@media only screen and (min-width: 1000px) {
-  .error {
-    right: 116px;
-  }
+  right: 0;
+  transition: all 150ms ease-in-out;
 }
 
+@keyframes bounceX {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+  96% {
+    transform: translateX(-2px);
+    timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+}
 button {
   width: 64px;
   height: 100%;
@@ -242,7 +310,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: linear-gradient(135deg, rgba(248, 191, 191, 0.5), rgba(238, 140, 140, 0.5));
+  background: linear-gradient(135deg, #f8c9c9, #f1acac);
 }
 @media only screen and (min-width: 1000px) {
   button {
