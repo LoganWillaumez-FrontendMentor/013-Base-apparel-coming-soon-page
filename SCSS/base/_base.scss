@@ -8,14 +8,12 @@
   margin: 0;
 }
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: $grad-3;
-  @media only screen and (min-width: 1540px) {
-    display: grid;
-    justify-content: center;
-  }
-  @media only screen and (min-height: 810px) {
-    align-items: center;
+  display: grid;
+  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+    place-items: center;
+    overflow: hidden;
   }
 }
 
@@ -24,22 +22,23 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  @media only screen and (min-width: 1000px) {
+  place-items: center;
+  // min-height: 100vh;
+  @media only screen and (min-width: 1000px) and (min-height: 800px) {
     display: grid;
     height: inherit;
     grid-template-columns: 57% 1fr;
     grid-template-rows: 108px 1fr;
     place-items: center;
     text-align: left;
-    max-width: 1540px;
+    min-height: 700px;
     max-height: 900px;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: left;
-    overflow: hidden;
     @media only screen and (min-width: 1540px) {
       overflow: visible;
-      width: 1500px;
+      // width: 1500px;
     }
   }
 }

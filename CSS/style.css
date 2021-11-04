@@ -11,18 +11,14 @@ body {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+  display: grid;
 }
-@media only screen and (min-width: 1540px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   body {
-    display: grid;
-    justify-content: center;
-  }
-}
-@media only screen and (min-height: 810px) {
-  body {
-    align-items: center;
+    place-items: center;
+    overflow: hidden;
   }
 }
 
@@ -31,8 +27,9 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  place-items: center;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .container {
     display: grid;
     height: inherit;
@@ -40,18 +37,16 @@ body {
     grid-template-rows: 108px 1fr;
     place-items: center;
     text-align: left;
-    max-width: 1540px;
+    min-height: 700px;
     max-height: 900px;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: left;
-    overflow: hidden;
   }
 }
-@media only screen and (min-width: 1000px) and (min-width: 1540px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) and (min-width: 1540px) {
   .container {
     overflow: visible;
-    width: 1500px;
   }
 }
 
@@ -67,7 +62,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   h1 {
     max-width: 369px;
     font-size: 64px;
@@ -76,7 +71,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .bigweight {
     font-weight: 600;
   }
@@ -95,7 +90,7 @@ h1 {
   font-weight: 300;
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .main-body {
     font-size: 16px;
     line-height: 28px;
@@ -119,7 +114,7 @@ header {
   flex-direction: column;
   margin-bottom: 64px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   header {
     grid-column: 2/-1;
     grid-row: 1/-1;
@@ -134,7 +129,7 @@ header {
   object-fit: cover;
   margin: 32px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .logo {
     position: absolute;
     top: 75px;
@@ -148,7 +143,7 @@ header {
 .picture-desktop {
   display: none;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .picture-desktop {
     display: inline;
   }
@@ -167,7 +162,7 @@ header {
     border-radius: 5px;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   .picture-mobile {
     display: none;
   }
@@ -182,7 +177,7 @@ main {
   flex-direction: column;
   max-width: 350px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-height: 800px) {
   main {
     max-width: 445px;
     grid-column: 1/1;
