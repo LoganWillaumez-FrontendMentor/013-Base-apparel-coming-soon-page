@@ -9,7 +9,7 @@ h1 {
   letter-spacing: 10.8254px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+  @media only screen and (min-width: 1200px) and (min-height: 800px) {
     max-width: 369px;
     font-size: 64px;
     line-height: 71px;
@@ -17,7 +17,7 @@ h1 {
   }
 }
 .bigweight {
-  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+  @media only screen and (min-width: 1200px) and (min-height: 800px) {
     font-weight: 600;
   }
 }
@@ -32,7 +32,7 @@ h1 {
   color: $desatured-red;
   font-weight: 300;
   margin-bottom: 32px;
-  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+  @media only screen and (min-width: 1200px) and (min-height: 800px) {
     font-size: 16px;
     line-height: 28px;
     max-width: 404px;

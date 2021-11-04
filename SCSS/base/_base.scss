@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   background: $grad-3;
   display: grid;
-  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+  @media only screen and (min-width: 1200px) and (min-height: 800px) {
     place-items: center;
     overflow: hidden;
   }
@@ -24,7 +24,7 @@ body {
   position: relative;
   place-items: center;
   // min-height: 100vh;
-  @media only screen and (min-width: 1000px) and (min-height: 800px) {
+  @media only screen and (min-width: 1200px) and (min-height: 800px) {
     display: grid;
     height: inherit;
     grid-template-columns: 57% 1fr;
@@ -33,6 +33,7 @@ body {
     text-align: left;
     min-height: 700px;
     max-height: 900px;
+    width: 1440px;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: left;

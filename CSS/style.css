@@ -15,7 +15,7 @@ body {
   background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
   display: grid;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   body {
     place-items: center;
     overflow: hidden;
@@ -29,7 +29,7 @@ body {
   position: relative;
   place-items: center;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .container {
     display: grid;
     height: inherit;
@@ -39,12 +39,13 @@ body {
     text-align: left;
     min-height: 700px;
     max-height: 900px;
+    width: 1440px;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: left;
   }
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) and (min-width: 1540px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) and (min-width: 1540px) {
   .container {
     overflow: visible;
   }
@@ -62,7 +63,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   h1 {
     max-width: 369px;
     font-size: 64px;
@@ -71,7 +72,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .bigweight {
     font-weight: 600;
   }
@@ -90,7 +91,7 @@ h1 {
   font-weight: 300;
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .main-body {
     font-size: 16px;
     line-height: 28px;
@@ -114,7 +115,7 @@ header {
   flex-direction: column;
   margin-bottom: 64px;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   header {
     grid-column: 2/-1;
     grid-row: 1/-1;
@@ -129,7 +130,7 @@ header {
   object-fit: cover;
   margin: 32px;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .logo {
     position: absolute;
     top: 75px;
@@ -143,7 +144,7 @@ header {
 .picture-desktop {
   display: none;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .picture-desktop {
     display: inline;
   }
@@ -162,7 +163,7 @@ header {
     border-radius: 5px;
   }
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   .picture-mobile {
     display: none;
   }
@@ -177,7 +178,7 @@ main {
   flex-direction: column;
   max-width: 350px;
 }
-@media only screen and (min-width: 1000px) and (min-height: 800px) {
+@media only screen and (min-width: 1200px) and (min-height: 800px) {
   main {
     max-width: 445px;
     grid-column: 1/1;
@@ -205,7 +206,7 @@ form.active .error {
   visibility: visible;
   right: 72px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   form.active .error {
     right: 116px;
   }
@@ -213,7 +214,7 @@ form.active .error {
 form.active .valid-email {
   transform: scaleY(1);
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   form {
     grid-column: 1/1;
     grid-row: 3/3;
@@ -307,7 +308,7 @@ button {
 button:hover {
   background: linear-gradient(135deg, #f8c9c9, #f1acac);
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   button {
     width: 100px;
   }

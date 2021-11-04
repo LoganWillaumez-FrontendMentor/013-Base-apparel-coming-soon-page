@@ -14,7 +14,7 @@ form {
     .error {
       visibility: visible;
       right: 72px;
-      @media only screen and (min-width: 1000px) {
+      @media only screen and (min-width: 1200px) {
         right: 116px;
       }
     }
@@ -22,7 +22,7 @@ form {
       transform: scaleY(1);
     }
   }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1200px) {
     grid-column: 1/1;
     grid-row: 3/3;
     width: 445px;
